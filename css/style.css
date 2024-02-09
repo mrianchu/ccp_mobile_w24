@@ -1,4 +1,39 @@
+/*photo gallery format*/
 .grid-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*formatting navigation links*/
+nav ul {
+    margin: 0;
+    list-style-type: none; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-items: center;
+}
+
+/*remove underline and change color for link*/    
+nav ul li a {
+    text-decoration: none; 
+    color: black; 
+    font-size: large;
+}
+
+/*make links blue and bold on hover*/
+nav ul li a:hover {
+    color: blue;
+    font-weight: bold; 
+}
+
+/*color for navigation bar*/
+nav {
+    background-color: lightgray; 
+    padding: 10px; /* Add padding */
+}
+
+/* active page link with bold and underline*/
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
