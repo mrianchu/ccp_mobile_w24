@@ -146,3 +146,8 @@ video + p{
     font-style: italic;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .animated-element {
+      animation: none;
+    }
+  }
